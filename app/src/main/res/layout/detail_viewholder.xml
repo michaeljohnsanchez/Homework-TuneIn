@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlHardcoded">
+
+    <LinearLayout
+        android:id="@+id/icon_and_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:contentDescription="@string/icon"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:paddingTop="@dimen/three_dp"
+            android:src="@mipmap/ic_launcher"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="@dimen/five_dp"
+                
+            />
+            <TextView
+                android:id="@+id/item_subtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/point_five_dp"
+        android:layout_below="@id/icon_and_text"
+        android:background="@color/divider_gray"/>
+</RelativeLayout>
