@@ -15,8 +15,9 @@ public interface FooApi {
     // Json query param is appended by an interceptor (see: ApiUtils for retrofit config)
 
     // (Required by the retrofit builder)
-    String BASE_URL = ""; // api endpoint removed for privacy...
+    String BASE_URL = "http://opml.radiotime.com";
 
     @GET
     Call<ApiResponse> get(@Url String url);
+    
 }
