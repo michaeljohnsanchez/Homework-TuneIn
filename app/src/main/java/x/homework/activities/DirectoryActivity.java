@@ -86,7 +86,6 @@ public class DirectoryActivity extends AppCompatActivity {
                     .commit();
         }
 
-        // requires thread confinement to be safe but by default we shouldn't be calling
         private boolean getAndSet() {
             act = actRef.get();
             return act != null;
